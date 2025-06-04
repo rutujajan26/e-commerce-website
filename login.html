@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body> 
+
+  <!-- header section -->
+
+    <nav class="navbar navbar-expand-lg bg-light  bg-body-tertiary shadow-lg sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="image/logo.png" alt="logo" width="80px"><span class="logo">Learning and Placement</span>
+    </a>
+    <button class="btn signBtn d-flex justify-content-end"  data-bs-toggle="modal" data-bs-target="#enModal">Signup</button>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="marketing.html">Marketing</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="programming.html">Programming</a>
+        </li>
+                 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="explore.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Explore
+          </a>
+          <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="explore.html">Artificial Intelligence</a></li>
+            <li><a class="dropdown-item" href="explore.html">AWS</a></li>
+            <li><a class="dropdown-item" href="explore.html">Microsoft Excel</a></li>
+            <li><a class="dropdown-item" href="explore.html">Machine Learning</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="explore.html">View all</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Login</a>
+        </li>
+        
+      </ul>
+      <form class="searchBtn d-flex" role="search">
+        <i class="fa-solid fa-magnifying-glass m-2"></i>
+        <input class="form-control me-2"  type="search" placeholder="Search Courses" aria-label="Search"/>        
+      </form>      
+    </div>
+  <button class="signLgBtn" data-bs-toggle="modal" data-bs-target="#enModal">Signup</button>  
+  </div>
+</nav>
+
+<!-- signup enquiry form-->
+   
+   <div class="modal shadow-lg" id="enModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-lg-center text-center" id="exampleModalLabel">SignUP</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form>              
+             <div class="mb-2">
+               <label for="Name"><i class="fa-solid fa-user m-1"></i> Name</label>
+               <input type="text" class="form-control" id="Name" aria-describedby="emailHelp">
+             </div>
+             <div class="mb-2">
+              <label for="Email1" class="form-label"><i class="fa-solid fa-envelope m-1"></i> Email</label>
+              <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-2">
+              <label for="exampleInputPassword1" class="form-label"><i class="fa-solid fa-lock m-1"></i> Password</label>
+               <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+      </div>
+      <div class="modalBtn d-flex justify-content-center">       
+        <button type="button" class="btn btn-primary">SignUP</button>                                 
+      </div>
+      <div class="signNote text-center" >
+          <p>Already have an account?
+          <a href="login.html" style="text-decoration: none; margin-bottom: 5px;">Login</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- stickey button -->
+ <div class="btn-outer d-flex justify-content-end align-items-end p-3 gap-3 fixed-bottom" >
+    
+  <button class="btn btn-outline-success whatsappbtn " data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Joined our Whatsapp group for more details."><i class="fa-brands fa-whatsapp"></i> Chat with Us</button>
+
+   <button class="btn btn-outline-info callbtn "  data-bs-toggle="tooltip"  data-bs-placement="bottom"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Call us for this website regarding information"><i class="fa-solid fa-phone"></i> Call Us</button>
+ 
+ </div>
+
+<!--login banner -->
+   
+<section class="loginbanner">
+      <div class="loginb">
+          <h1>Login</h1>
+      </div>
+</section>
+
+
+<!-- login form -->
+<section class="login-now ">
+ <form class="my-login p-3">
+     <h1 class="text-center mb-2">Login</h1>
+  <div class="mb-3">
+    <i class="fa-solid fa-envelope mr-2"></i>
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+     <i class="fa-solid fa-lock mr-2"></i>
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  
+  </div>
+   <div class="loginbtn"> 
+  <button type="submit" class="loginsub ">Login</button><br>
+  <span >Don't have an account?</span><a href="" style="color: rgb(0, 191, 255); text-decoration: none;">SignUP</a>
+  </div>
+</form>
+</section>
+
+
+    <!-- scrollspy -->
+ <header id="header-information" class="header pt-3">
+     
+      <ul class="header nav-pills">
+    <li class="informationr-item">
+      <button> <a class="information-link" href="#scrollspyHeader1">About</a></button>
+    </li>
+    <li class="information-item">
+      <button><a class="information-link" href="#scrollspyHeader2">Services</a></button>
+    </li>
+    <li class="information-item">
+      <button><a class="information-link" href="#scrollspyHeader3">Features</a></button>
+    </li>
+    <li class="information-item">
+       <button><a class="information-link" href="#scrollspyHeader4">Contacts</a></button>
+    </li>
+  </ul>
+
+ </header>
+ <hr>
+<div data-bs-spy="scroll" data-bs-target="#header-information" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary  rounded-2" tabindex="0">
+   <div>
+  <h1 id="scrollspyHeader1" class="p-1">About</h1>
+  <p class="p-2">RJTEch partners with more than 350 leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide. We offer a range of learning opportunities—from hands-on projects and courses to job-ready certificates and degree programs.</p>
+     <h3 class="text-bold text-center">We believe</h3>
+  <pre class="text-center">
+        
+Learning is the source of human progress.
+
+It has the power to transform our world
+from illness to health,
+from poverty to prosperity,
+from conflict to peace.
+
+It has the power to transform our lives
+for ourselves,
+for our families,
+for our communities.
+
+No matter who we are or where we are,
+learning empowers us to change and grow
+and redefine what’s possible.
+That’s why access to the best learning is a right, 
+not a privilege.
+
+And that’s why RJTEch is here.
+We partner with the best institutions
+to bring the best learning
+to every corner of the world.
+
+So that anyone, anywhere has the power to
+transform their lives through learning.
+  </pre>
+</div>
+
+
+  <h1 id="scrollspyHeader2" class="p-1">Services</h1>
+  <div class="header2">
+    <h5 class="text-bold p-2">Who May Use Our Services</h5>
+    <span>Any use or access by anyone under the age of 13 is strictly prohibited.</span>
+    <p>Additionally, you may use our Services only if you:</p>
+    <ul>
+      <li><i class="fa-regular fa-square fa-2xs"></i> can form a binding contract with RJTEch;</li>
+      <li><i class="fa-regular fa-square fa-2xs"></i> comply with these Terms, all applicable laws, and our policies (including the Acceptable Use Policy, Honor Code, course-specific eligibility requirements, and any other policies that may be applicable from time to time (“Policies”)); and</li>
+      <li><i class="fa-regular fa-square fa-2xs"></i> are over the age at which you can provide consent to data processing under the laws of your country. Certain regions and Content Offerings may have additional requirements and/or different age restrictions.</li>
+    </ul>
+    <p>Any violation of our Terms, applicable laws, or Policies may result in your access to all or part of the Services being suspended, disabled, or terminated.<br>
+
+    When you create your RJTEch account, and when you subsequently use certain features, you must provide us with accurate and complete information, and you agree to update your information to keep it accurate and complete.
+    </p>
+
+    <h4 class="p-2">Our License to You</h4>
+    <p>Subject to these Terms and our Policies, we grant you a limited, personal, non-exclusive, non-transferable, and revocable license right to use our Services. The rights granted herein are only for your personal, non-commercial use, unless you obtain our written permission otherwise. You also agree that you will create, access, and/or use only one user account, unless expressly permitted by RJTEch, and you will not share access to your account or access information for your account with any third party. Using our Services does not give you ownership of or any intellectual property rights in our Services or the content you access.</p>
+
+    <h4 class="p-2">Commercial Use</h4>
+    <p>Any use of our Services for commercial purposes is strictly prohibited. Any commercial use must be subject to a separate agreement with RJTEch, Inc. Refer to our Enterprise page for more information. If you are an organization already using our Services, separate terms apply. These terms do not govern the relationship between your organization and RJTEch.
+</p>
+</div>
+
+  
+
+  <h1 id="scrollspyHeader3" class="p-1">Features</h1>
+    <h2 class="text-center">World-Class Learning for Anyone, Anywhere</h2>
+    <p class="text-center">RJTEch partners with more than 350+ leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide.</p>
+    <br>
+     <div class="features-section container bg-body-tertiary d-flex flex-wrap ">
+         <div class="col">
+             <i class="fa-solid fa-earth-americas fa-2xl mb-4"></i>
+                <h2>World-class</h2>
+              <h6>Learn from experts at 350+ leading universities and companies.</h6>
+              <p>Earn recognized credentials from leading universities and companies to achieve your goals.</p>
+         </div>
+
+         <div class="col">
+          <i class="fa-solid fa-graduation-cap fa-2xl mb-4"></i>
+          <h2>Affordable</h2>
+            <h6>Explore hundreds of free courses or get started with a free trial.</h6>
+            <p>Earn a university degree and enjoy high-quality curriculum, affordable pricing, and flexible scheduling.</p>
+         </div>
+
+         <div class="col">         
+            <i class="fa-solid fa-award fa-2xl mb-4"></i>
+            <h2>Job-relevant</h2>
+            <h6>Master essential career skills based on comprehensive skills data.</h6>
+            <p>Build personal and professional skills with applied learning.</p>
+         </div>
+
+         <div class="col">
+            <i class="fa-solid fa-computer fa-2xl mb-4"></i>
+             <h2>Flexible</h2>
+             <h6>Get on-demand lectures for desktop and mobile—on your schedule.</h6>
+             <p>Choose from free courses, hands-on projects, certificate programs, and stackable credentials</p>
+         </div>
+     </div>
+     
+
+     
+  <h4 id="scrollspyHeader4"></h4>
+    <section class="Contacts-section container p-3">
+       <div class="row">
+         <!-- contact -->
+          <div class="col-lg-4">
+            <h1>Contact Us</h1>
+
+          <div class="contact-info text-center animate__animated animate__fadeInLeft">
+                    <i class="fas fa-phone"></i>
+                    <h5>Call Us</h5>
+                    <p>+91-0123456789</p>
+                </div>
+                <div class="contact-info text-center animate__animated animate__fadeInLeft delay-1s">
+                    <i class="fas fa-envelope"></i>
+                    <h5>Email Us</h5>
+                    <p>RJTech@gmail.com</p>
+                </div>
+                <div class="contact-info text-center animate__animated animate__fadeInLeft delay-2s">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h5>Visit Us</h5>
+                    <p>ITPL Road,Bangalore</p>
+                </div>
+
+          </div>
+          
+
+        
+          <div class="col-lg-7 justify-content-center">
+               <p>Have questions? The quickest way to get in touch with us is using the contact information.                
+              </p>
+              <h1>Learner Support</h1>
+              <p>If you are a learner and need help, please visit our Learner Help Center to find troubleshooting and FAQs or contact our Learner Support team.
+                   You can search for your issue or check out our most popular articles:
+                   Check and update your email communication preferences
+
+                   Verify your ID
+
+                  How to solve problems with peer-graded assignments
+
+                  Cancel a subscription
+
+                  Refund policies
+
+                  Troubleshooting login and account issues</p>
+              
+          </div>
+       </div>
+    </section>  
+
+
+
+  
+ <!-- FOOTER -->
+
+ <footer>
+       <div class="row">
+            <div class="col">
+                 <img src="image/logo.png" alt="logo" class="footerlogo">
+                 <p><p>Empowering your future through skill-based learning and career-focused training. Join thousands of learners who’ve transformed their careers with us. Learn. Grow. Get placed.</p></p>
+            </div>
+
+            <div class="col">
+               <h3>Office  <div class="underline"><span></span></div>  </h3>
+               <p>ITPL Road</p>
+              <p>Whitefield,Bangalore</p>
+              <p>Karnataka, PIN 560056, India</p>
+              <p class="email-id">learningandplacement@outlook.com</p>
+              <h5>+91-0123456789</h5>
+            </div>
+
+            <div class="col">
+              <h3>Link <div class="underline"><span></span></div>  </h3>
+              <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Features</a></li>
+                  <li><a href="">Contacts</a></li>
+               </ul>
+            </div>
+
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div>  </h3>
+                <form class="footerform">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" placeholder="Enter your email id">
+                  <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+       </div>
+       <hr>
+       <p class="Copyright">Copyright (©) RJTEch</p>
+ </footer>
+
+
+ </body>
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+       <script>const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+           const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</script>
+</html>

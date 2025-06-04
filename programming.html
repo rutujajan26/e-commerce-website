@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming page</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body> 
+
+  <!-- header section -->
+
+    <nav class="navbar navbar-expand-lg bg-light  bg-body-tertiary shadow-lg sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="image/logo.png" alt="logo" width="80px"><span class="logo">Learning and Placement</span>
+    </a>
+    <button class="btn signBtn d-flex justify-content-end"  data-bs-toggle="modal" data-bs-target="#enModal">Signup</button>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="marketing.html">Marketing</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" href="#">Programming</a>
+        </li>
+                 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="explore.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Explore
+          </a>
+          <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="explore.html">Artificial Intelligence</a></li>
+            <li><a class="dropdown-item" href="explore.html">AWS</a></li>
+            <li><a class="dropdown-item" href="explore.html">Microsoft Excel</a></li>
+            <li><a class="dropdown-item" href="explore.html">Machine Learning</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="explore.html">View all</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        
+      </ul>
+      <form class="searchBtn d-flex" role="search">
+        <i class="fa-solid fa-magnifying-glass m-2"></i>
+        <input class="form-control me-2"  type="search" placeholder="Search Courses" aria-label="Search"/>        
+      </form>      
+    </div>
+  <button class="signLgBtn" data-bs-toggle="modal" data-bs-target="#enModal">Signup</button>  
+  </div>
+</nav>
+
+<!-- signup enquiry form-->
+   
+   <div class="modal shadow-lg" id="enModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-lg-center text-center" id="exampleModalLabel">SignUP</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form>              
+             <div class="mb-2">
+               <label for="Name"><i class="fa-solid fa-user m-1"></i> Name</label>
+               <input type="text" class="form-control" id="Name" aria-describedby="emailHelp">
+             </div>
+             <div class="mb-2">
+              <label for="Email1" class="form-label"><i class="fa-solid fa-envelope m-1"></i> Email</label>
+              <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-2">
+              <label for="exampleInputPassword1" class="form-label"><i class="fa-solid fa-lock m-1"></i> Password</label>
+               <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+      </div>
+      <div class="modalBtn d-flex justify-content-center">       
+        <button type="button" class="btn btn-primary">SignUP</button>                                 
+      </div>
+      <div class="signNote text-center" >
+          <p>Already have an account?
+          <a href="login.html" style="text-decoration: none; margin-bottom: 5px;">Login</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- stickey button -->
+ <div class="btn-outer d-flex justify-content-end align-items-end p-3 gap-3 fixed-bottom" >
+    
+  <button class="btn btn-outline-success whatsappbtn " data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Joined our Whatsapp group for more details."><i class="fa-brands fa-whatsapp"></i> Chat with Us</button>
+
+   <button class="btn btn-outline-info callbtn "  data-bs-toggle="tooltip"  data-bs-placement="bottom"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Call us for this website regarding information"><i class="fa-solid fa-phone"></i> Call Us</button>
+ 
+ </div>
+
+<!-- programming banner -->
+
+<section class="programmingBanner">
+     <div class="probanner">
+         <h1>Programming <br>World</h1>
+     </div>
+
+</section>
+
+<!-- programming enroll -->
+<section class="container-fluid program-section mt-3  shadow-lg">
+
+   <div class="container p-5">
+          <h1><span style="color: rgb(25, 88, 113); font-size: 50px;">RJ</span>Tecnology</h1>
+
+          <h3 >Programming for Everybody (Getting <br>Started with Python)</h3>
+          <p>This course is part of <b><u>Python for Everybody Specialization </u></b></p>
+
+          <div class="instructor d-flex align-items-center">
+
+            <img src="image/instructor.png" width="50px" style="border-radius: 100%; margin-right: 10px;">
+            <p class="text-center">
+               Instructor: <u>Charles Russell Severance</u></p>
+          </div>
+
+          <button class="proEnroll mt-3 mb-3">
+             <p>Enroll for Free<br>Starts Jun 3</p>               
+          </button>
+        
+
+          <p>3,324,311 already enrolled</p>
+
+          <p>Included with <span style="color: rgb(10, 178, 245);">RJTEch</span><a href="" style="text-decoration: none; margin-left: 10px;">•
+           Learn more</a>
+
+</p>
+
+   </div>
+      
+</section>
+
+<!-- programming highlights -->
+
+<section class="container shadow-lg mt-3 mb-3 bg-white programmingSection"  style="width: 80%;">
+    
+        <div class="rowProgramming d-flex flex-wrap justify-content-between  row-cols-lg-5 row-cols-md-2 col-12 ">
+          <div class="proCounter">
+              <h5><u>7 Modules</u></h5>
+              <p style="font-size: 13px;">Gain insight into a topic and learn <br>the fundamentals.</p>
+          </div> 
+          <div class="proCounter">
+               <h5>4.8 <i class="fa-solid fa-star fa-sm" style="color: #74C0FC;"></i></h5>
+               <p style="font-size: 13px;">(231,340 reviews)</p>
+          </div>   
+          <div class="proCounter">
+              <h5>Beginner level</h5>
+              <p style="font-size: 13px;">No prior experience required</p>
+          </div>   
+          <div class="proCounter">
+             <h5>Flexible schedule</h5>
+             <p style="font-size: 13px;">8 hours to complete <br>
+              Learn at your own pace </p>
+          </div>   
+          <div class="proCounter">
+             <h5><i class="fa-solid fa-thumbs-up" style="color: #74C0FC;"></i> 98%</h5>
+             <p style="font-size: 13px;">Most learners liked this course</p>
+          </div>   
+          
+        </div>  
+</section>
+
+<!-- programming details -->
+
+<section id="program-Module" class="container-fluid program px-3 mb-3" style="width: 80%;">
+ 
+  <ul class="program-pills d-flex" style="width: 60%;" >
+    <li class="pro-item">
+      <a class="program-link" href="#scrollspyHeading1">About</a>
+    </li>
+    <li class="pro-item">
+      <a class="program-link" href="#scrollspyHeading2">Outcomes</a>
+    </li>
+    <li class="pro-item">
+         <a class="program-link" href="#scrollspyHeading3">Modules</a>
+    </li>
+     <li class="pro-item">
+         <a class="program-link" href="#scrollspyHeading4">Recommendations</a>
+    </li>
+     <li class="pro-item">
+         <a class="program-link" href="#scrollspyHeading5">Testimonials</a>
+    </li>
+     <li class="pro-item">
+         <a class="program-link" href="#scrollspyHeading6">reviews</a>
+    </li>
+  </ul>
+
+</section>
+<div data-bs-spy="scroll" data-bs-target="#program-Module" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="container scrollspy-example  p-3 rounded-2" tabindex="0" >
+  <h6 id="scrollspyHeading1"><b>What you'll learn</b></h6>
+     <ul>
+           <li><i class="fa-solid fa-check" style="color: #74C0FC;"></i> Install Python and write your first program</li>
+           <li><i class="fa-solid fa-check" style="color: #74C0FC;"></i> Describe the basics of the Python programming language</li>
+           <li><i class="fa-solid fa-check" style="color: #74C0FC;"></i> Use variables to store, retrieve and calculate information
+            </li>
+           <li><i class="fa-solid fa-check" style="color: #74C0FC;"></i> Utilize core programming tools such as functions and loops</li>          
+        </ul>
+        <br>
+        
+  <h6 id="scrollspyHeading2"><b>Build your subject-matter expertise</b></h6>
+    <div class="proOutcomes d-flex flex-wrap justify-content-between px-5">
+        <div class="col-lg-4" style="order: 1;">
+           <img src="image/programming img.jpg" alt="" width="400px">
+        </div>  
+        <div class="col-lg-6 align-items-center" style="order: 0;">
+             <p>This course is part of the <span style="color: rgb(44, 139, 202);"> Python for Everybody Specialization</span>
+               <br>When you enroll in this course, you'll also be enrolled in this Specialization.</p>
+
+                <ul>
+           <li><i class="fa-solid fa-circle fa-2xs"></i> Learn new concepts from industry experts</li>
+           <li><i class="fa-solid fa-circle fa-2xs"></i> Gain a foundational understanding of a subject or tool</li>
+           <li><i class="fa-solid fa-circle fa-2xs"></i> Develop job-relevant skills with hands-on projects
+
+            </li>
+           <li><i class="fa-solid fa-circle fa-2xs"></i> Earn a shareable career certificate</li>
+           
+        </ul>
+        </div>
+                 
+    </div>
+    <br>
+  <h6 id="scrollspyHeading3"><b>There are 7 modules in this course</b></h6>
+  <p>This course aims to teach everyone the basics of programming computers using Python. We cover the basics of how one constructs a program from a series of simple instructions in Python.  The course has no pre-requisites and avoids all but the simplest mathematics. Anyone with moderate computer experience should be able to master the materials in this course. This course will cover Chapters 1-5 of the textbook “Python for Everybody”.  Once a student completes this course, they will be ready to take more advanced programming courses. This course covers Python 3.</p>
+
+ <div class="accordion accordion-flush p-3" id="pills-modules" style="width: 60%; border: 1px solid rgb(210, 243, 244);">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <b>Module 1: Why we Program?</b>      
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">These are the course-wide materials as well as the first part of Chapter One where we explore what it means to write programs. We finished Chapter One and had the quiz and first assignment in the third week of the class. Throughout the course, you may want to come back and look at these materials. This section should not take you an entire week.</div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+       <b>Module 2: Installing Python</b>
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">In this module you will set things up so you can write Python programs. Not all activities in this module are required for this class so please read the "Using Python in this Class" material for details.</div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        <b>Module 3: Why we Program(continued)</b>
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">In the first chapter, we try to cover the "big picture" of programming so you get a "table of contents" of the rest of the book. Don't worry if not everything makes perfect sense the first time you hear it. This chapter is quite broad and you would benefit from reading the chapter in the book in addition to watching the lectures to help it all sink in. You might want to come back and re-watch these lectures after you have finished a few more chapters.</div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+       <b>Module 4: Variables and Expression</b>
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">In this chapter we cover how a program uses the computer's memory to store, retrieve and calculate information.</div>
+    </div>
+  </div>
+
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+       <b>Module 5: Conditional Code</b>
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">In this section we move from sequential code that simply runs one line of code after another to conditional code where some steps are skipped. It is a very simple concept - but it is how computer software makes "choices".</div>
+    </div>
+  </div>
+
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+       <b>Module 6: Functions</b>
+      </button>
+    </h2>
+    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">This is a relatively short chapter. We will learn about what functions are and how we can use them. The programs in the first chapters of the book are not large enough to require us to develop functions, but as the book moves into more and more complex programs, functions will be an essential way for us to make sense of our code.</div>
+    </div>
+  </div>
+
+    <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+       <b>Module 7: Loops and Iteration</b>
+      </button>
+    </h2>
+    <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Loops and iteration complete our four basic programming patterns. Loops are the way we tell Python to do something over and over. Loops are the way we build programs that stay with a problem until the problem is solved.</div>
+    </div>
+  </div>
+ 
+  <div class="accordion-item ">     
+    <h2 class="accordion-header">
+           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+       <b> Module 8: Earn a career certificate</b>
+      </button>
+    </h2>
+     <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Add this credential to your LinkedIn profile, resume, or CV. Share it on social media and in your performance review.</div>
+    </div>    
+  </div>
+      </div>
+    </div>
+
+  <br>
+  <h6 id="scrollspyHeading4" style="padding-left: 3%;"><b>Explore more from Software Development</b></h6>
+    <div class="popular-course-cards p-3">
+        
+          <div class="popular-cards" style="width: 20rem;">
+               
+                  <img src="image/ai2.png" alt="ai">                             
+                   <h1 >AI</h1>
+                   <p>AI is technology that enables computers and machines to simulate human learning, problem solving, decision making, creativity and autonomy.</p>
+
+                  <div class=" d-flex justify-content-between">
+                    <b><del>₹1,999</del> ₹999</b>
+                    <a href="login.html" style="text-decoration: none;">Enroll Now ></a>
+                </div>
+               
+          </div>
+
+          <div class="popular-cards" style="width: 20rem;">
+              
+                  <img src="image/da course.png" alt="da">
+              
+               <h1 >Data Analytics</h1>
+                   <p>Data analysis is the process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information.</p>
+
+                  <div class=" d-flex justify-content-between">
+                    <b><del>₹3,999</del> ₹1,999</b>
+                    <a href="login.html" style="text-decoration: none;">Enroll Now ></a>
+                </div>
+          </div>
+
+          <div class="popular-cards" style="width: 20rem;">
+               
+                  <img src="image/block course.png" alt="blockchain">
+              
+               <h1 >Blockchain</h1>
+                   <p>Blockchain technology is an advanced database mechanism that allows transparent information sharing within a business network.</p>
+
+                  <div class=" d-flex justify-content-between">
+                    <b><del>₹5,999</del> ₹2,999</b>
+                    <a href="login.html" style="text-decoration: none;">Enroll Now ></a>
+                </div>
+          </div>
+
+          <div class="popular-cards" style="width: 20rem;">
+               
+                  <img src="image/cyber course.png" alt="Cyber Security">
+
+               <h1 >Cyber Security</h1>
+                   <p>Cyber security is  the technologies, and policies used to protect computer systems, and data from various cyber threats like hacking, and  attacks. </p>
+
+                  <div class=" d-flex justify-content-between">
+                    <b><del>₹2,999</del> ₹1,599</b>
+                    <a href="login.html" style="text-decoration: none;">Enroll Now ></a>
+                </div>
+          </div>
+
+       </div>
+      <br>
+  <h6 id="scrollspyHeading5" style="padding-left: 3%;"><b>Why people choose Coursera for their career</b></h6>
+  <div class="student-feedback-card gap-3 p-3">
+              <div class="student-card">                   
+                        <div class="imgter">
+                          <div ><img src="image/ter2.png" alt="student"></div>
+                          <div class="p-2">
+                              <h6><b>Felipe M.</b></h6>
+                              <p>Learner since 2023</p>
+                          </div>
+                          </div>
+                              <p>"To be able to take courses at my own pace and rhythm has been an amazing experience. I can learn whenever it fits my schedule and mood."</p>                                           
+              </div>
+
+              <div class="student-card">                   
+                        <div class="imgter">
+                          <div ><img src="image/ter5.png" alt="student"></div>
+                          <div class="p-2">
+                              <h6><b>Jennifer J.</b></h6>
+                              <p>Learner since 2020</p>
+                          </div>
+                          </div>
+                              <p>"I directly applied the concepts and skills I learned from my courses to an exciting new project at work."
+</p>                                           
+              </div>
+
+              <div class="student-card">                   
+                        <div class="imgter">
+                          <div ><img src="image/ter1.png" alt="student"></div>
+                          <div class="p-2">
+                              <h6><b>Larry W.</b></h6>
+                              <p>Learner since 2018</p>
+                          </div>
+                          </div>
+                              <p>"When I need courses on topics that my university doesn't offer, Coursera is one of the best places to go."</p>                                           
+              </div>
+
+              <div class="student-card">                   
+                        <div class="imgter">
+                          <div ><img src="image/ter3.png" alt="student"></div>
+                          <div class="p-2">
+                              <h6><b>Chaitanya A.</b></h6>
+                              <p>Learner since 2024</p>
+                          </div>
+                          </div>
+                              <p>"Learning isn't just about being better at your job: it's so much more than that. Coursera allows me to learn without limits."</p>                                           
+              </div>
+
+         </div>
+         <br>
+
+  <h6 id="scrollspyHeading6" style="padding-left: 3%;"><b>Learner reviews</b></h6>
+  
+  <p style="padding-left: 3%;"><i class="fa-solid fa-star" style="color: #74C0FC;"></i><b>4.8</b>  <sub>231,340 reviews</sub></p>
+
+  <section class="myReview">
+     
+<div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0">
+    <div class="progress-bar" style="width: 90%"></div>
+</div>
+
+<div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="0">
+  <div class="progress-bar" style="width: 75%"></div>
+</div>
+<div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="0">
+  <div class="progress-bar" style="width: 50%"></div>
+</div>
+<div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="35" aria-valuemin="0" aria-valuemax="0">
+  <div class="progress-bar" style="width: 25%"></div>
+</div>
+  <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="0">
+    <div class="progress-bar" style="width: 5%"></div>
+</div>
+</section>
+</div>
+
+
+
+
+ <!-- FOOTER -->
+
+ <footer>
+     <div class="row">
+          <div class="col">
+              <img src="image/logo.png" class="footerlogo" alt="logo">
+              <p>Empowering your future through skill-based learning and career-focused training. Join thousands of learners who’ve transformed their careers with us. Learn. Grow. Get placed.</p>
+          </div>
+
+          <div class="col">
+              <h3>Office  <div class="underline"><span></span></div> </h3>
+              <p>ITPL Road</p>
+              <p>Whitefield,Bangalore</p>
+              <p>Karnataka, PIN 560056, India</p>
+              <p class="email-id">learningandplacement@outlook.com</p>
+              <h5>+91-0123456789</h5>
+            </div>
+
+          <div class="col">
+               <h3>Links <div class="underline"><span></span></div> </h3>
+               <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Features</a></li>
+                  <li><a href="">Contacts</a></li>
+               </ul>
+          </div>
+
+          <div class="col">
+             <h3>Newsletter <div class="underline"><span></span></div> </h3>
+              <form class="footerform">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" placeholder="Enter your email id">
+                  <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+           </div>
+
+     </div>
+      <hr>
+      <p class="Copyright">Copyright (©) RJTEch</p>
+ </footer>
+
+ </body>
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+       <script>const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+           const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</script>
+</html>

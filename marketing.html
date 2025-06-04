@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marketing page</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body> 
+
+  <!-- header section -->
+
+    <nav class="navbar navbar-expand-lg bg-light  bg-body-tertiary shadow-lg sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="image/logo.png" alt="logo" width="80px"><span class="logo">Learning and Placement</span>
+    </a>
+    <button class="btn signBtn d-flex justify-content-end"  data-bs-toggle="modal" data-bs-target="#enModal">Signup</button>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Marketing</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="programming.html" >Programming</a>
+        </li>
+                 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="explore.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Explore
+          </a>
+          <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="explore.html">Artificial Intelligence</a></li>
+            <li><a class="dropdown-item" href="explore.html">AWS</a></li>
+            <li><a class="dropdown-item" href="explore.html">Microsoft Excel</a></li>
+            <li><a class="dropdown-item" href="explore.html">Machine Learning</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="explore.html">View all</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        
+      </ul>
+      <form class="searchBtn d-flex" role="search">
+        <i class="fa-solid fa-magnifying-glass m-2"></i>
+        <input class="form-control me-2"  type="search" placeholder="Search Courses" aria-label="Search"/>        
+      </form>      
+    </div>
+  <button class="signLgBtn" data-bs-toggle="modal" data-bs-target="#enModal">Signup</button>  
+  </div>
+</nav>
+
+<!-- signup enquiry form-->
+   
+   <div class="modal shadow-lg" id="enModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-lg-center text-center" id="exampleModalLabel">SignUP</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form>              
+             <div class="mb-2">
+               <label for="Name"><i class="fa-solid fa-user m-1"></i> Name</label>
+               <input type="text" class="form-control" id="Name" aria-describedby="emailHelp">
+             </div>
+             <div class="mb-2">
+              <label for="Email1" class="form-label"><i class="fa-solid fa-envelope m-1"></i> Email</label>
+              <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-2">
+              <label for="exampleInputPassword1" class="form-label"><i class="fa-solid fa-lock m-1"></i> Password</label>
+               <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+      </div>
+      <div class="modalBtn d-flex justify-content-center">       
+        <button type="button" class="btn btn-primary">SignUP</button>                                 
+      </div>
+      <div class="signNote text-center" >
+          <p>Already have an account?
+          <a href="login.html" style="text-decoration: none; margin-bottom: 5px;">Login</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- stickey button -->
+ <div class="btn-outer d-flex justify-content-end align-items-end p-3 gap-3 fixed-bottom" >
+    
+  <button class="btn btn-outline-success whatsappbtn " data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Joined our Whatsapp group for more details."><i class="fa-brands fa-whatsapp"></i> Chat with Us</button>
+
+   <button class="btn btn-outline-info callbtn "  data-bs-toggle="tooltip"  data-bs-placement="bottom"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="Call us for this website regarding information"><i class="fa-solid fa-phone"></i> Call Us</button>
+ 
+ </div>
+
+<!-- banner -->
+
+ <section class="dmbanner">
+    <div class="digitalmarketing">
+          <h1>Digital Marketing</h1>
+    </div>
+    
+ </section>
+
+
+<!-- main body part -->
+
+       <section class="container-fluid py-lg-5 py-sm-4 py-3">
+           <div class="container">
+               <div class="row justify-content-between gy-4 align-items-center">
+                   <div class="col-lg-6 ">
+                       <div class="bannerContent" >
+                            <h1>Career Opportunities <br>
+                                in<span> Digital Marketing</span></h1>
+                                <p>Digital marketing course so good,you only pay-after-placement</p>
+                       
+                          <ul class="m-0 p-0">
+                                    <li><i class="fa-solid fa-circle-check" style="color: #74C0FC;"></i> Specialization: Performance Marketing</li>
+                                     <li><i class="fa-solid fa-circle-check" style="color: #74C0FC;"></i> Min salary of Rs 25LPA</li>
+                                      <li><i class="fa-solid fa-circle-check" style="color: #74C0FC;"></i> 50 seats only</li>
+                                </ul>
+
+                                <div class="bannerContentBtn d-flex gap-3 mt-2">
+                                    <button data-bs-toggle="modal" data-bs-target="#bookModal">Book 2 Days Demo</button>
+
+                                    <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-download"></i> Download Curriculum</button>
+                                </div>
+                          </div>
+                  </div>
+
+
+                   <div class="col-lg-5">
+                        <form action="" class="bannerForm shadow-lg">
+                            <h3>Book Your Class Now</h3>
+                            <p>2 days of free demo classes without paying in  advance! </p>
+
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                              
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" placeholder="Enter your Email" class="form-control" id="email">
+                            </div>
+
+                            <div class="mb-3">
+                               
+                                <label for="number" class="form-label">Mobile Number:</label>
+                                <div class="input-group">
+                                 <span class="input-group-text" id="basic-addon1" >+91</span>
+                                <input type="text" class="form-control" placeholder="Enter your mobile number" id="number" >
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <button>Register Now</button>
+                            </div>                           
+                        </form>
+                   </div>
+               </div>
+           </div>            
+       </section>
+
+ <!-- main body part button enquiry form only button--> 
+  
+ <div class="modal fade" id="bookModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Enquire Now</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <form action="" class="bannerForm p-3">
+                            <h3>Book Your Class Now</h3>
+                            <p>2 days of free demo classes without paying in  advance! </p>
+
+                            <div class="mb-3">
+                                <label for="name1" class="form-label">Name:</label>
+                                <input type="text" class="form-control" id="name1">
+                            </div>
+                              
+                            <div class="mb-3">
+                                <label for="email1" class="form-label">Email:</label>
+                                <input type="email" placeholder="Enter your Email" class="form-control" id="email1">
+                            </div>
+
+                            <div class="mb-3">
+                               
+                                <label for="no1" class="form-label">Mobile Number:</label>
+                                <div class="input-group">
+                                 <span class="input-group-text" id="basic-addon1" >+91</span>
+                                <input type="text" class="form-control" placeholder="Enter your mobile number" id="no1">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <button>Register Now</button>
+                            </div>
+                           
+                        </form>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Click for Download </h1>
+        <button type="button" class="btn-close"   data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Download Curriculum all details pdf, click a download button
+        <br>      
+
+        <b><i class="fa-solid fa-file-pdf"></i> Pdf</b>
+        <p>12.5MB</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Download</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--section student info -->  
+
+   <div class="container shadow-lg mt-5 mb-3 counterSection" style="width: 80%;">
+          
+              <div class="rowCounter d-flex flex-wrap row-cols-lg-5 row-cols-md-2 row-cols-2 p-4" >
+
+                <div class="colCounter">
+                    <h2>1000+</h2>
+                    <p>Students Trained</p>
+                </div>
+                <div class="colCounter">
+                       <h2><i class="fa-solid fa-indian-rupee-sign" style="color: #0ACEFE;"></i> 4.5 LPA</h2>
+                    <p>Students Trained</p>
+                </div>
+                <div class="colCounter">
+                       <h2>320+</h2>
+                    <p>Recruiting Partners</p>
+                </div>
+                <div class="colCounter">
+                       <h2>10:00 am</h2>
+                    <p>Program Timings</p>
+                </div>
+                <div class="colCounter">
+                       <h2>11th May</h2>
+                    <p>Next Batch Starts</p>
+                </div>
+
+              </div>
+          
+       </div>
+
+<!--highlights-section --> 
+     <section class="container-fluid highlights-section py-5 mt-5">
+        <div class="container">
+           <div class="rowhighlight">
+              <div class="col-12 mb-4">
+              <h2 class="text-center">Key Highlights of the Course</h2>
+              <p class="text-center">Here's a key point tailored for a website focused on student benefits:</p>
+           </div>
+           </div>
+           
+           <div class="row gap-3">
+             <div class="col-lg-3 col-md-6 col-12">
+                 <div class="bg-white p-3 d-flex align-items-center gap-3 highlightsItems">
+                   <i class="fa-regular fa-file-lines fa-2xl" style="color: #63E6BE;"></i>
+                    <div>
+                        <h4>Assignments &<br> Modules tests</h4>
+                        <p>Test your Knowledge</p>
+                    </div>
+                 </div>
+             </div>
+
+             <div class="col-lg-3 col-md-6 col-12">
+                 <div class="bg-white p-3 d-flex align-items-center gap-3 highlightsItems">
+                   <i class="fa-regular fa-star fa-2xl" style="color: #d08f35;"></i>
+                    <div>
+                        <h4>Industry-recognized<br>Certification</h4>
+                        <p>Stand out to your Professional</p>
+                    </div>
+                 </div>
+             </div>
+
+             <div class="col-lg-3 col-md-6 col-12">
+                 <div class="bg-white p-3 d-flex align-items-center gap-3 highlightsItems">
+                  <i class="fa-solid fa-video fa-2xl" style="color: #B197FC;"></i>
+                    <div>
+                        <h4>Live Classess<br>Recorded Lectures</h4>
+                        <p>Best of both worlds of learning</p>
+                    </div>
+                 </div>
+             </div>
+
+             <div class="col-lg-3 col-md-6 col-12">
+                 <div class="bg-white p-3 d-flex align-items-center gap-3 highlightsItems">
+                 <i class="fa-solid fa-download fa-2xl" style="color: #74C0FC;"></i>
+                    <div>
+                        <h4>Downloadable<br> Content</h4>
+                        <p>With lifetime access</p>
+                    </div>
+                 </div>
+             </div>
+
+             <div class="col-lg-3 col-md-6 col-12">
+                 <div class="bg-white p-3 d-flex align-items-center gap-3 highlightsItems">
+                  <i class="fa-regular fa-folder fa-2xl" style="color: #3c6fc8;"></i>
+                    <div>
+                        <h4>6 Industry Level<br>Project</h4>
+                        <p>Get practical skills</p>
+                    </div>
+                 </div>
+             </div>
+
+             <div class="col-lg-3 col-md-6 col-12">
+                 <div class="bg-white p-3 d-flex align-items-center gap-3 highlightsItems">
+                   <i class="fa-regular fa-message fa-2xl" style="color: #ce3b4a;"></i>
+                    <div>
+                        <h4>4 Live Doubt Clearing<br> Session</h4>
+                        <p>Gain a clear understanding</p>
+                    </div>
+                 </div>
+             </div>
+
+         </div>
+          <div class="m-3 d-flex justify-content-center">
+             <button >Book Now</button>
+         </div>
+        </div>
+     </section>
+
+
+<!-- tab section -->
+ <section class="container-fluid py-5">
+           <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-8 text-center">
+                    <h2 class=" fw-bold">Curriculum of Our Digital Marketing</h2>
+                    
+                  </div>
+              </div>
+
+             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-about-tab" data-bs-toggle="pill" data-bs-target="#pills-about" type="button" role="tab" aria-controls="pills-about" aria-selected="true">About</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-outcomes-tab" data-bs-toggle="pill" data-bs-target="#pills-outcomes" type="button" role="tab" aria-controls="pills-outcomes" aria-selected="false">Outcomes</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-modules-tab" data-bs-toggle="pill" data-bs-target="#pills-modules" type="button" role="tab" aria-controls="pills-modules" aria-selected="false">Modules</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-testimonials-tab" data-bs-toggle="pill" data-bs-target="#pills-testimonials" type="button" role="tab" aria-controls="pills-testimonials" aria-selected="false">Testimonials</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab" tabindex="0">
+     <h5>What you'll learn</h5>
+      <ul>
+          <li><i class="fa-solid fa-check" style="color: #74C0FC;"></i> Define the fields of digital marketing.</li>
+          <li><i class="fa-solid fa-check" style="color: #74C0FC;"></i> Describe the job responsibilities of an entry-level digital marketer.</li>
+          <li><i class="fa-solid fa-check" style="color: #74C0FC;"></i> Explain the concept of a marketing funnel</li>
+          <li><i class="fa-solid fa-check" style="color: #74C0FC;"></i> Understand the elements and goals of a digital marketing.</li>
+      </ul>
+  </div>
+
+  <div class="tab-pane fade" id="pills-outcomes" role="tabpanel" aria-labelledby="pills-outcomes-tab" tabindex="0">
+       <h5>Build your Marketing expertise</h5>
+       <p>This course is part of the learning and placement <span style="color: #0ACEFE;">Digital Marketing Professional Certificate</span>
+         When you enroll in this course, you'll also be enrolled in this Professional Certificate.</p>
+        <ul>
+           <li><i class="fa-solid fa-square fa-2xs"></i> Learn new concepts from industry experts</li>
+           <li><i class="fa-solid fa-square fa-2xs"></i> Gain a foundational understanding of a subject or tool</li>
+           <li><i class="fa-solid fa-square fa-2xs"></i> Develop job-relevant skills with hands-on projects</li>
+           <li><i class="fa-solid fa-square fa-2xs"></i> Earn a shareable career certificate from RJTEch</li>
+           
+        </ul>
+
+  </div>
+
+  <div class="tab-pane fade" id="pills-modules" role="tabpanel" aria-labelledby="pills-modules-tab" tabindex="0">
+      <h5>There are 4 modules in this course</h5>
+      <p>This is the first of seven courses in the Digital Marketing , which will equip you with the skills you need to apply to entry-level roles in these fields. People who work in digital marketing  help their organizations attract new customers, engage customers through various digital channels, and drive transactions like purchases and customer loyalty. In this course, you’ll explore entry-level jobs in digital marketing and identify the roles and functions that those jobs play within an organization. You’ll also learn about the marketing funnel and how it shapes the customer journey. </p>
+      
+      <p>Top level Industry employees who currently work in the field will guide you, providing hands-on activities and examples that simulate common digital marketing and  tasks, and helping you build your skills and prepare for the job.</p>
+      <p>Learners who complete the seven courses in this program will be equipped to apply for entry-level jobs in digital marketing . No previous experience is necessary.
+     </p>
+     <p>By the end of this course, you will be able to do the following:</p>
+     <ul>
+         <li>- Define the fields of digital marketing</li>
+         <li>- Describe the job responsibilities of an entry-level digital marketing coordinator  (and similar job titles) </li>
+         <li>- Summarize how this program will help prepare you for a career in digital marketing</li>
+         <li>- Identify the roles and functions that digital marketing play within an organization</li>
+         <li>- Understand the customer journey and the function of journey maps</li>
+         <li>- Explain the concept of a marketing funnel</li>
+         <li>- Understand the elements and goals of a digital marketing </li>
+     </ul>
+     
+     <div class="accordion accordion-flush p-3" id="pills-modules" style="width: 60%; border: 1px solid rgb(210, 243, 244);">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <b>Module 1: Introduction to foundations of digital marketing</b>       
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">You’ll find out what’s in store for Course 1 and the whole certificate program. You’ll also learn about the Coursera platform, procedures, and content types, and meet other learners in the program. Then, you’ll learn about digital marketing and e-commerce basics, the tasks that people who work in these fields do, and the transferable skills you might already have. Finally, you’ll get some tips for embarking on careers in this field.</div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+       <b>Module 2: The customer journey and the marketing funnel</b>
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">You will learn what digital marketing and e-commerce roles and departments do within organizations and how they create value. You’ll also be introduced to marketing concepts, like the customer journey and the marketing funnel, that form the basis for much of what these roles do.</div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        <b>Module 3: Digital marketing strategy</b>
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">You will explore the relationship between digital marketing and branding, and how businesses can leverage both to be successful. You’ll investigate the elements of a digital marketing strategy, including goal setting, channel selection, and content planning. Then you’ll learn about commonly used channels and platforms, like search engine optimization (SEO), search engine marketing (SEM), display advertising, social media marketing, and email marketing.</div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+       <b>Module 4: Measure Performance success</b>
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">You will learn the importance of measuring results and common metrics to track. You’ll also examine how digital marketers and e-commerce specialists use data to assess and improve performance and tell stories with data. You’ll end the course by participating in optional content if you’re interested in preparing for a job search.</div>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+
+  <div class="tab-pane fade" id="pills-testimonials" role="tabpanel" aria-labelledby="pills-testimonials-tab" tabindex="0">
+         <h5>Why people choose RJTEch for their career</h5>
+               
+         <div class="student-feedback-card gap-3 p-3">
+              <div class="student-card">                   
+                        <div class="imgter">
+                          <div ><img src="image/ter2.png" alt="student"></div>
+                          <div class="p-2">
+                              <h6><b>Felipe M.</b></h6>
+                              <p>Learner since 2023</p>
+                          </div>
+                          </div>
+                              <p>"To be able to take courses at my own pace and rhythm has been an amazing experience. I can learn whenever it fits my schedule and mood."</p>                                           
+              </div>
+
+              <div class="student-card">                   
+                        <div class="imgter">
+                          <div ><img src="image/ter5.png" alt="student"></div>
+                          <div class="p-2">
+                              <h6><b>Jennifer J.</b></h6>
+                              <p>Learner since 2020</p>
+                          </div>
+                          </div>
+                              <p>"I directly applied the concepts and skills I learned from my courses to an exciting new project at work."
+</p>                                           
+              </div>
+
+              <div class="student-card">                   
+                        <div class="imgter">
+                          <div ><img src="image/ter1.png" alt="student"></div>
+                          <div class="p-2">
+                              <h6><b>Larry W.</b></h6>
+                              <p>Learner since 2018</p>
+                          </div>
+                          </div>
+                              <p>"When I need courses on topics that my university doesn't offer, Coursera is one of the best places to go."</p>                                           
+              </div>
+
+              <div class="student-card">                   
+                        <div class="imgter">
+                          <div ><img src="image/ter3.png" alt="student"></div>
+                          <div class="p-2">
+                              <h6><b>Chaitanya A.</b></h6>
+                              <p>Learner since 2024</p>
+                          </div>
+                          </div>
+                              <p>"Learning isn't just about being better at your job: it's so much more than that. Coursera allows me to learn without limits."</p>                                           
+              </div>
+
+         </div>
+          
+  </div>
+</div>  
+           </div>
+      </section>
+
+
+
+
+
+     <!-- FOOTER -->
+
+<footer>
+     <div class="row">
+          <div class="col">
+              <img src="image/logo.png" class="footerlogo" alt="logo">
+              <p>Empowering your future through skill-based learning and career-focused training. Join thousands of learners who’ve transformed their careers with us. Learn. Grow. Get placed.</p>
+          </div>
+
+          <div class="col">
+              <h3>Office  <div class="underline"><span></span></div> </h3>
+              <p>ITPL Road</p>
+              <p>Whitefield,Bangalore</p>
+              <p>Karnataka, PIN 560056, India</p>
+              <p class="email-id">learningandplacement@outlook.com</p>
+              <h5>+91-0123456789</h5>
+            </div>
+
+          <div class="col">
+               <h3>Links <div class="underline"><span></span></div> </h3>
+               <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Features</a></li>
+                  <li><a href="">Contacts</a></li>
+               </ul>
+          </div>
+
+          <div class="col">
+             <h3>Newsletter <div class="underline"><span></span></div> </h3>
+              <form class="footerform">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" placeholder="Enter your email id">
+                  <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+           </div>
+
+     </div>
+      <hr>
+      <p class="Copyright">Copyright (©) RJTEch</p>
+ </footer> 
+
+ </body>
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+       <script>const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+           const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</script>
+</html>

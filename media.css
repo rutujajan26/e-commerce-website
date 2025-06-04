@@ -1,0 +1,159 @@
+@media only screen and (min-width: 200px) and (max-width: 999px){
+        .searchBtn{
+            display: none !important;
+        }
+        .signLgBtn{
+            display: none !important;
+        }
+        .btn-outer{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+         /* background-color: white; */
+         padding: 5px 0px;
+        left: 0px;
+        justify-content:center !important;       
+    }
+    .whatsappbtn,.callbtn{
+        padding: 7px 15px;
+        font-size: 14px;
+    }
+    .carousel-item img{
+    height: 90vh;
+    object-fit: cover;
+    filter: brightness(40%);
+     }
+    .carousel-caption {
+    text-align: left !important;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .banner{
+    width: 100%;
+    background-size: cover;
+    }
+    .main-body h5{
+    color:  #0ACEFE;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.3;
+    }
+    .main-body h1{
+    color: #fff !important;
+    font-weight: 600;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    margin-top: 0;
+    font-size: 40px;
+    font-family: "Nunito", sans-serif; 
+    line-height: 1.2;
+    }
+    .main-body p{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 35px;
+    color: white;
+    margin-bottom: 1.5rem !important;
+    }
+    .main-body .btn{
+    display: flex;
+    text-align: center;
+    gap: 20px;
+   }
+   .main-body .btn .btn1{
+    color: #fff;
+    background-color: #0ACEFE;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-decoration: none;
+   }
+   .main-body .btn .btn2{
+    color: black;
+    background-color: white;
+    font-weight: 500;
+    padding: 15px 30px;
+    text-decoration: none;
+    }
+    .main-body .btn .btn1:hover{
+    color: #0ACEFE;
+    background-color: transparent;
+    border: 1px solid #0ACEFE;
+    transition: 0.5s;
+    }
+    .main-body .btn .btn2:hover{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+     transition: 0.5s;
+    }
+    footer{
+        bottom: unset;
+    }
+    .col{
+    flex-basis: 100%;
+    
+    }
+    col:nth-child(2), .col:nth-child(3){
+    flex-basis: 100%;
+    }
+    .digitalmarketing{
+    width: 100%;
+    padding: 5rem;  
+    background-image: url(image/allbanner2.png);
+    background-size: cover;
+    text-align: center;
+    }
+      .bannerContent h1{
+    font-size: 32px;
+    font-weight: 700;
+    /* text-align: center; */
+    line-height: 35px;
+    }
+    .bannerContent p,.bannerContent ul li{
+       font-size: 16px;
+    }
+    .bannerContentBtn button{
+        font-size: 11px;
+        
+    }
+    .bannerForm{
+        padding: 20px;
+    }
+    .highlights-section h2{ 
+    font-size: 26px;   
+    }
+    .login-now{
+    
+    
+    display: flex;
+   
+    justify-content: center;
+   
+    padding: 20px;   
+}
+.my-login{
+     
+    box-shadow: #b9b9b9 4px 4px 12px;   
+}
+.probanner h1{
+     color: #0ACEFE;
+    font-size: 50px;
+    font-weight: bolder;
+      text-align: center;
+     font-family: "Nunito", sans-serif;
+}
+
+}
+ 
+@media (min-width: 1000px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+        max-width: 1400px;
+    }
+    .signBtn{
+        display: none !important;
+    }
+}
