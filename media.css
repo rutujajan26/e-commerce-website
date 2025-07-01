@@ -1,4 +1,4 @@
-@media only screen and (min-width: 200px) and (max-width: 999px){
+@media only screen and (min-width: 480px) and (max-width: 790px){
         .searchBtn{
             display: none !important;
         }
@@ -141,10 +141,27 @@
 }
 .probanner h1{
      color: #0ACEFE;
+    font-size: 35px;
+    font-weight: bolder;
+      text-align: center;
+     font-family: "Nunito", sans-serif;
+}
+.exploreMore h1{
+      color: #0ACEFE;
     font-size: 50px;
     font-weight: bolder;
       text-align: center;
      font-family: "Nunito", sans-serif;
+}
+.digitalmarketing h1{
+      color: #0ACEFE;
+    font-size: 40px;
+    font-weight: bolder;
+      text-align: center;
+     font-family: "Nunito", sans-serif;
+}
+#program-Module ul li{
+   display: none;
 }
 
 }

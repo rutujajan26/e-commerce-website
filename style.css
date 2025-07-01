@@ -542,6 +542,11 @@ hr{
     transform: scale(1.1,1.1);
     transition: 1s;
 }
+/* .accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} */
 /* card terminals */
 
  .student-feedback-card{
