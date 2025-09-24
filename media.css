@@ -1,20 +1,6 @@
 @media only screen and (max-width: 480px) and (max-width: 790px){
-        /* .searchBtn{
-            display: none !important;
-        }
-        .signLgBtn{
-            display: none !important;
-        }
-        .btn-outer{
-        position: fixed;
-        bottom: 0px;
-        width: 100%;
-         /* background-color: white; 
-         padding: 5px 0px;
-        left: 0px;
-        justify-content:center !important;       
-    } */
-    .whatsappbtn,.callbtn{
+  
+     .whatsappbtn,.callbtn{
         padding: 7px 15px;
         font-size: 14px;
     }
@@ -108,10 +94,10 @@
     text-align: center;
     }
       .bannerContent h1{
-    font-size: 32px;
-    font-weight: 700;
-    /* text-align: center; */
-    line-height: 35px;
+    font-size: 30px;
+    font-weight: 700; 
+    
+     line-height: 35px;
     }
     .bannerContent p,.bannerContent ul li{
        font-size: 16px;
@@ -141,7 +127,7 @@
 }
 .probanner h1{
      color: #0ACEFE;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bolder;
       text-align: center;
      font-family: "Nunito", sans-serif;
@@ -162,15 +148,15 @@
 }
 #program-Module ul li{
    display: none;
-}
+} 
 
 }
  
-/* @media (min-width: 1000px){
+@media (min-width: 1000px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
         max-width: 1400px;
     }
-    .signBtn{
+    /* .signBtn{
         display: none !important;
-    }
-} */
+    } */
+}
