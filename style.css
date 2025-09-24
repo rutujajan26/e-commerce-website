@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -43,7 +43,7 @@ body {
     color: white !important;
     transform: scale(1.1,1.1);
     transition: 1s;
-}
+} */
 /* extra info btn for user */
 .whatsappbtn{
     border: 1px solid #27AE60;
@@ -70,9 +70,200 @@ body {
     transform: scale(1.1,1.1);
     transition: 1s;
 }
+/****************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ---------- Header ---------- */
+.logo {
+    font-family: "Nunito", sans-serif;
+    color: #0ACEFE;
+}
+.signBtn, .signLgBtn {
+    font-family: "Nunito", sans-serif;
+    border-radius: 5px;
+    border: none;
+    padding: 6px 12px;
+    background: linear-gradient(to right, #0ACEFE, #2699FB);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.signBtn:hover, .signLgBtn:hover {
+    transform: scale(1.1);
+    color: white !important;
+}
+.nav-item a {
+    font-family: "Nunito", sans-serif;
+}
+.nav-item a:hover {
+    color: #0ACEFE !important;
+}
+.signBtn {
+    display: none;
+}
+/* ---------- Carousel Banner ---------- */
+.carousel-item img {
+    height: 90vh;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+.carousel-caption {
+    text-align: left !important;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner {
+    width: 100%;
+}
+.main-body h5 {
+    color: #0ACEFE;
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.main-body h1 {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 60px;
+    font-family: "Nunito", sans-serif;
+    line-height: 1.2;
+}
+.main-body p {
+    font-family: "Nunito", sans-serif;
+    margin: 20px 0;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
+.main-body .btn {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.main-body .btn .btn1 {
+    color: #fff;
+    background-color: #0ACEFE;
+    font-weight: 500;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+.main-body .btn .btn2 {
+    color: black;
+    background-color: white;
+    font-weight: 500;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+.main-body .btn .btn1:hover {
+    color: #0ACEFE;
+    background-color: transparent;
+    border: 1px solid #0ACEFE;
+}
+.main-body .btn .btn2:hover {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+/* ---------- Sticky Buttons ---------- */
+/* .btn-outer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+.btn-outer button {
+    white-space: nowrap;
+} */
+
+/* ---------- Media Queries ---------- */
+
+/* Mobile (0 - 576px) */
+@media (max-width: 576px) {
+    .main-body h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+    .main-body p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .carousel-item img {
+        height: 60vh;
+    }
+    .searchBtn, .signLgBtn {
+        display: none !important;
+    }
+    .btn-outer {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        padding: 5px 0;
+        background: #fff;
+        box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+    }
+    .btn-outer button {
+        flex: 1;
+        font-size: 14px;
+    }
+}
+
+/* Tablet (577px - 992px) */
+@media (max-width: 992px) {
+    .main-body h1 {
+        font-size: 40px;
+    }
+    .main-body p {
+        font-size: 16px;
+    }
+    .carousel-item img {
+        height: 70vh;
+    }
+     .signBtn {
+        display: none !important;
+    }
+    .signLgBtn {
+        display: inline-block !important;
+    }
+}
+@media (max-width: 991px) {
+    .signBtn {
+        display: inline-block !important;
+    }
+    .signLgBtn {
+        display: none !important;
+    }
+}
+/* Large screens (≥1000px) */
+@media (min-width: 1000px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1400px;
+    }
+    .signBtn {
+        display: none !important;
+    }
+}
 /*--------------- home page (banner section) ------------------------------------*/
-.carousel-item img{
+/* .carousel-item img{
     height: 90vh;
     object-fit: cover;
     filter: brightness(40%);
@@ -151,7 +342,7 @@ body {
     background-color: transparent;
     border: 1px solid white;
      transition: 0.5s;
-}
+} */
 /* card section */
  .cards i{
     display: flex;
@@ -571,25 +762,38 @@ hr{
 
 
  /*----------------------- explore page --------------------------------------- */
-.expobanner{
-    width: 100%;
+/* Banner */
+.exploreMore {
+  width: 100%;
+  min-height: 50vh;
+  background: url(image/allbanner2.png) center/cover no-repeat;
+
+  /* ✅ Center content */
+  display: flex;
+  align-items: center;   /* vertical center */
+  justify-content: center; /* horizontal center */
+  text-align: center; /* for multi-line text */
 }
-.exploreMore{
-    width: 100%;
-    padding: 10rem; 
-    background-image: url(image/allbanner2.png);
-    background-size: cover;
-    text-align: center;  
+
+.exploreMore h1 {
+  font-size: clamp(2rem, 6vw, 70px); /* auto scale */
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+  color: #0ACEFE;
 }
-.exploreMore h1{
-     color: #0ACEFE;
-    font-size: 70px;
-    font-weight: bolder;
-     font-family: "Nunito", sans-serif;
-    
+
+/* Footer logo */
+.footerlogo {
+  width: 80px;
+}
+
+/* Card */
+.card h5 {
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
 }
 /*-------------------------------------------- programming section -------------------------*/
-.programmingBanner{
+/* .programmingBanner{
     width: 100%;
 }
 .probanner{
@@ -646,7 +850,7 @@ h3{
    
 }
 .program-link{
-    /* border: 1px solid rgb(0, 255, 64);  */
+    /* border: 1px solid rgb(0, 255, 64);  
     padding: 10px; 
     color: #000;
 }
@@ -683,128 +887,399 @@ h3{
     display: flex;
     justify-content: space-around
 }
+ */
 
+/* ================= Banner ================== */
+.programmingBanner {
+    width: 100%;
+}
+.probanner {
+    width: 100%;
+    padding: 6rem 2rem;
+    background-image: url(image/allbanner2.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.probanner h1 {
+    color: #34c2ea;
+    font-size: clamp(2rem, 5vw, 70px); /* auto resizes */
+    font-weight: bolder;
+    font-family: "Nunito", sans-serif;
+}
 
+/* ================= Section ================== */
+.program-section {
+    background-color: #bae6f197;
+}
+.proEnroll {
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 5px;
+    border: none; 
+    background: linear-gradient(to right, #0ACEFE, #2699FB);
+    color: white;
+    text-align: center;
+    padding: 0.7rem;
+}
+.programmingSection {
+    position: relative;
+    top: -40px;
+}
+.container p, h3 {
+    font-family: "Nunito", sans-serif;
+}
+h3 { 
+    font-weight: bolder;
+    font-size: clamp(1.5rem, 3vw, 40px);
+    letter-spacing: 1px;
+}
 
+/* ================= Pills ================== */
+.program-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 5px;
+}
+.pro-item {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+.program-link {
+    padding: 10px 15px; 
+    color: #000;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.program-link:hover {
+    background-color: #2699FB;
+    color: white;
+    border-radius: 5px;
+}
+
+/* ================= Review Box ================== */
+.myReview {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* ================= Counters ================== */
+.proCounter {
+    font-family: "Nunito", sans-serif;
+    padding: 15px;
+    flex: 1 1 150px;
+    text-align: center;
+}
+.proCounter h5 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* ================= Flex rows ================== */
+.rowProgramming {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* ================= Popular courses ================== */
+.popular-course-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.popular-cards {
+    flex: 1 1 250px;
+    max-width: 20rem;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* ================= Student feedback ================== */
+.student-feedback-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.student-card {
+    flex: 1 1 250px;
+    max-width: 20rem;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* ================= Media Queries ================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .probanner { padding: 4rem 2rem; }
+    .proEnroll { width: 100%; }
+    .rowProgramming { gap: 1rem; }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+    .probanner { padding: 3rem 1rem; }
+    .probanner h1 { font-size: 2rem; }
+    .program-pills { flex-direction: column; align-items: center; }
+    .pro-item { width: 100%; }
+    .myReview { width: 90%; }
+    .popular-cards, .student-card { max-width: 100%; }
+}
 
  /*----------------------- login page --------------------------------------- */
- .loginbanner{
+ /* Login Banner */
+.loginbanner {
+  width: 100%;
+}
+
+.loginb {
+  width: 100%;
+  min-height: 50vh;
+  background: url(image/allbanner2.png) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 2rem; /* smaller padding for mobile */
+}
+
+.loginb h1 {
+  color: #0ACEFE;
+  font-size: clamp(2rem, 6vw, 70px); /* responsive font */
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Login Form */
+.login-now {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.my-login {
+  width: 40%;
+  padding: 20px;
+  box-shadow: #b9b9b9 4px 4px 12px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+/* Login Button */
+.loginsub {
+  background: linear-gradient(to right, #0ACEFE, #2699FB);
+  color: white;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.loginsub:hover {
+  background: transparent;
+  border: 1px solid #0ACEFE;
+  color: #0ACEFE;
+}
+.loginbtn {
+  text-align: center;
+}
+
+/* Features Section */
+.features-section .col {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: #dddddd 4px 4px 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Contact Info */
+.contact-info {
+  width: 100%;
+  max-width: 15rem;
+  box-shadow: #dddddd 4px 4px 12px;
+  text-align: center;
+  gap: 10px;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+.contact-info:hover {
+  background-color: #cef2fc9e;
+}
+
+/* Responsive Fixes */
+@media (max-width: 991px) {
+  .my-login {
+    width: 70%; /* medium devices */
+  }
+  .header ul {
     width: 100%;
- }
- .loginb{
-     width: 100%;
-    padding: 10rem;   
-    background-image: url(image/allbanner2.png); 
-    background-size: cover;
-    text-align: center;
- }
- .loginb h1{
-    color: #0ACEFE;
-    font-size: 70px;
-    font-weight: bolder;
-     font-family: "Nunito", sans-serif;
- }
- /* form login */
-.login-now{
-    width: 100%;
-    display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
-   
-    padding: 20px;   
+  }
 }
-.my-login{
-   
-    width: 40%;
-    padding: 10px;
-    box-shadow: #b9b9b9 4px 4px 12px;   
+
+@media (max-width: 768px) {
+  .my-login {
+    width: 90%; /* small devices */
+  }
+  .loginb {
+    padding: 3rem 1rem;
+  }
+  .features-section {
+    flex-direction: column;
+  }
+  .features-section .col {
+    margin-right: 0;
+  }
 }
-.loginsub{
-    background: linear-gradient(to right, #0ACEFE,#2699FB);
-    color: white;
-    padding: 7px 15px;
-    border: none;
-    border-radius: 5px;
+
+@media (max-width: 480px) {
+  .loginb h1 {
+    font-size: 2rem; /* extra small devices */
+  }
 }
-.loginsub:hover{
-    background: transparent;
-    border: 1px solid  #0ACEFE ;
-    color: #0ACEFE;
+#header-information {
+  background: #fff;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1020; /* stay above content */
+  border-bottom: 1px solid #ddd;
 }
-.loginbtn{
-   text-align: center;
+
+#header-information ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-/* details */
- .header{
-   flex-wrap: wrap;
-    
- }
- .header ul{ 
-    width: 70%; 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly ;
+
+#header-information li {
+  list-style: none;
+}
+
+#header-information a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  background: #f8f9fa;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Active state (Bootstrap Scrollspy adds .active) */
+#header-information a.active {
+  background: linear-gradient(to right, #0ACEFE, #2699FB);
+  color: #fff !important;
+  font-weight: 600;
+}
+
+/* Hover */
+#header-information a:hover {
+  background: #eaf8ff;
+  color: #0ACEFE;
+}
+
+/* Scrollspy content */
+.scrollspy-example {
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+}
+
+/* Headings inside sections */
+.scrollspy-example h1,
+.scrollspy-example h3,
+.scrollspy-example h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Features Section */
+.features-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.features-section .col {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: #dddddd 4px 4px 12px;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.features-section .col:hover {
+  transform: translateY(-5px);
+  background: #f7fcff;
+}
+
+/* Contact Section */
+.Contacts-section {
+  margin-top: 2rem;
+}
+
+.contact-info {
+  width: 100%;
+  max-width: 20rem;
+  box-shadow: #dddddd 4px 4px 12px;
+  text-align: center;
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+.contact-info:hover {
+  background: #cef2fc9e;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 991px) {
+  #header-information ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #header-information a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  .scrollspy-example {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #header-information ul {
+    flex-direction: column;
     align-items: center;
-     font-family: "Nunito", sans-serif;
-   
- }
-  .header a{
-    color: #e6f1f4 ;
-    font-size: 15px;
-    font-weight: bold;
-     font-family: "Nunito", sans-serif;
- }
- .header button{
-    
-    padding: 10px 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #0ACEFE;
-    
- }
-  .header button:hover{
-    background: transparent;
-    border: 1px solid skyblue;
-    color: skyblue;
- }
- .header2 p{
-    text-align: justify;
-    padding: 10px;
-     font-family: "Nunito", sans-serif;
- }
-
- .features-section i{
-       display: flex;
-       justify-content: center; 
-       padding-top: 10px;    
- }
-  .features-section h2{
-     text-align: center;
-      font-family: "Nunito", sans-serif;
   }
-  .features-section h6 p{
-      font-family: "Nunito", sans-serif;
+  #header-information a {
+    width: 100%;
+    text-align: center;
   }
-  .features-section .col{
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
-     justify-content: space-between;
-     /* border: 1px solid black; */  
-     box-shadow: #dddddd 4px 4px 12px;
-       margin-right: 15px;
-
-  }
- .contact-info {
-    width: 15rem;
-    box-shadow: #dddddd 4px 4px 12px;   
-    text-align: center; 
-    gap: 10px; 
-    padding: 10px;
-  
-   
- }
-  .contact-info:hover{
-    background-color: #cef2fc9e;
-  }
+}
