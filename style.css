@@ -218,7 +218,57 @@ html, body {
 }
 
 /* ---------- Responsive Styles ---------- */
+@media (max-width: 399.98px) {
 
+    /* Navbar adjustments */
+    .navbar .navbar-brand img {
+        width: 50px; /* very small logo */
+    }
+
+    .navbar .logo {
+        font-size: 0.9rem;
+    }
+
+    .navbar .nav-link {
+        font-size: 0.8rem;
+        padding: 6px 3px;
+    }
+
+    /* Signup button */
+    .signBtn {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+
+    /* Carousel adjustments */
+    .carousel-item img {
+        height: 45vh; /* smaller carousel height */
+    }
+
+    .carousel-caption {
+        bottom: 8%;
+        padding: 0 5px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    .carousel-caption h5 {
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+    }
+
+    .carousel-caption .btn a {
+        padding: 8px 15px;
+        font-size: 0.75rem;
+    }
+}
 /* Mobile: up to 576px */
 @media (max-width: 575.98px) {
 
