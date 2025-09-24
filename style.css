@@ -1,15 +1,15 @@
-/* * {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Heebo';
+    font-family: 'Heebo', sans-serif;
 }
 
-html,
-body {
-    width: 100% ;
+html, body {
+    width: 100%;
+    overflow-x: hidden;
 }
-/* header */
+
 .logo{
      font-family: "Nunito", sans-serif;
     color: #0ACEFE;
@@ -69,18 +69,6 @@ body {
 .callbtn:hover{
     transform: scale(1.1,1.1);
     transition: 1s;
-}
-/****************************************************/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Heebo', sans-serif;
-}
-
-html, body {
-    width: 100%;
-    overflow-x: hidden;
 }
 
 /* ---------- Header ---------- */
@@ -218,57 +206,7 @@ html, body {
 }
 
 /* ---------- Responsive Styles ---------- */
-@media (max-width: 399.98px) {
 
-    /* Navbar adjustments */
-    .navbar .navbar-brand img {
-        width: 50px; /* very small logo */
-    }
-
-    .navbar .logo {
-        font-size: 0.9rem;
-    }
-
-    .navbar .nav-link {
-        font-size: 0.8rem;
-        padding: 6px 3px;
-    }
-
-    /* Signup button */
-    .signBtn {
-        padding: 4px 8px;
-        font-size: 0.75rem;
-    }
-
-    /* Carousel adjustments */
-    .carousel-item img {
-        height: 45vh; /* smaller carousel height */
-    }
-
-    .carousel-caption {
-        bottom: 8%;
-        padding: 0 5px;
-    }
-
-    .carousel-caption h1 {
-        font-size: 1.2rem;
-        line-height: 1.2;
-    }
-
-    .carousel-caption h5 {
-        font-size: 0.9rem;
-    }
-
-    .carousel-caption p {
-        font-size: 0.8rem;
-        line-height: 1.1rem;
-    }
-
-    .carousel-caption .btn a {
-        padding: 8px 15px;
-        font-size: 0.75rem;
-    }
-}
 /* Mobile: up to 576px */
 @media (max-width: 575.98px) {
 
@@ -787,11 +725,11 @@ hr{
     transform: scale(1.1,1.1);
     transition: 1s;
 }
-/* .accordion {
+ .accordion {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-} */
+} 
 /* card terminals */
 
  .student-feedback-card{
@@ -847,101 +785,7 @@ hr{
   font-family: "Nunito", sans-serif;
 }
 /*-------------------------------------------- programming section -------------------------*/
-/* .programmingBanner{
-    width: 100%;
-}
-.probanner{
-    width: 100%;
-    padding: 10rem;
-    background-image: url(image/allbanner2.png);
-    background-size: cover;
-  
-}
-.probanner h1{
-     color: #34c2ea;
-    font-size: 70px;
-    font-weight: bolder;
-      text-align: center;
-     font-family: "Nunito", sans-serif;
-}
-.program-section{
-    background-color: #bae6f197;
-}
-.proEnroll{
-    width: 20rem;
-     border-radius: 5px;
-   border: none; 
-   background: linear-gradient(to right, #0ACEFE,#2699FB);
-   color: white;
-   
-} 
-.proEnroll p{
-    text-align: center;
-    padding: 5px;
-}
-.programmingSection{
-    position: relative;
-    top: -50px;
-}
-.container p{
-      font-family: "Nunito", sans-serif;
-}
-h3{ 
-      font-weight: bolder;
-       font-size: 40px;
-       letter-spacing: 2px;
-      font-family: "Nunito", sans-serif;
-}
-.program-pills{
-       display: flex;
-       justify-content: space-between;
-       padding: 5px;
-    
-}
-.pro-item{
-    display: flex;
-    justify-content: center;
-   
-}
-.program-link{
-    /* border: 1px solid rgb(0, 255, 64);  
-    padding: 10px; 
-    color: #000;
-}
-.program-link:hover{
-    background-color: #2699FB;
-    color: white;
-    border-radius: 5px;
-}
 
-.myReview{
-    width: 30%;
-    margin-left: 30px;
-    padding: 20px;
-   
-}
-.proCounter {
-        
-     font-family: "Nunito", sans-serif;
-     padding: 10px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-}
-.proCounter h5{
-    font-size: 17px;
-    font-weight: bold;
-    font-family: "Nunito", sans-serif;
-}
-
-.rowProgramming{
-   
-   
-    display: flex;
-    justify-content: space-around
-}
- */
 
 /* ================= Banner ================== */
 .programmingBanner {
