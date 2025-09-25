@@ -10,40 +10,7 @@ html, body {
     overflow-x: hidden;
 }
 
-.logo{
-     font-family: "Nunito", sans-serif;
-    color: #0ACEFE;
-}
-.signBtn{
-     font-family: "Nunito", sans-serif;
-   border-radius: 5px;
-   border: none;
-   padding: 5px;
-   background: linear-gradient(to right, #0ACEFE,#2699FB);
-   color: white;
-}
-.signBtn:hover{
-   transform: scale(1.1,1.1);
-    transition: 1s;
-}
-.nav-item a{
-     font-family: "Nunito", sans-serif;
-}
-.nav-item a:hover{
-    color:#0ACEFE !important;
-}
-.signLgBtn{
-    border-radius: 5px;
-   border: none;
-   padding: 5px;
-   background: linear-gradient(to right, #0ACEFE,#2699FB);
-   color: white ;
-}
-.signLgBtn:hover{
-    color: white !important;
-    transform: scale(1.1,1.1);
-    transition: 1s;
-} */
+
 /* extra info btn for user */
 .whatsappbtn{
     border: 1px solid #27AE60;
@@ -72,266 +39,166 @@ html, body {
 }
 
 /* ---------- Header ---------- */
+/* ---------- Brand Logo ---------- */
 .logo {
-    font-family: "Nunito", sans-serif;
-    color: #0ACEFE;
-    font-weight: 700;
-}
-.logo {
-    font-family: "Nunito", sans-serif;
-    color: #0ACEFE;
-    font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  color: #0ACEFE;
+  font-weight: 700;
 }
 
-.navbar-nav .nav-link {
-    font-family: "Nunito", sans-serif;
-    font-weight: 500;
+/* ---------- Navbar Links ---------- */
+.navbar-nav .nav-link,
+.nav-item a {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #0ACEFE !important;
+.navbar-nav .nav-link:hover,
+.nav-item a:hover {
+  color: #0ACEFE !important;
 }
 
+/* ---------- Buttons ---------- */
 .signBtn, .signLgBtn {
-    font-family: "Nunito", sans-serif;
-    border-radius: 5px;
-    border: none;
-    padding: 6px 12px;
-    background: linear-gradient(to right, #0ACEFE, #2699FB);
-    color: white;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+  font-family: "Nunito", sans-serif;
+  border-radius: 5px;
+  border: none;
+  padding: 6px 12px;
+  background: linear-gradient(to right, #0ACEFE, #2699FB);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .signBtn:hover, .signLgBtn:hover {
-    transform: scale(1.1);
-    color: white !important;
+  transform: scale(1.1);
+  color: white !important;
 }
-.nav-item a {
-    font-family: "Nunito", sans-serif;
-}
-.nav-item a:hover {
-    color: #0ACEFE !important;
-}
-.signBtn {
-    display: none;
-}
-/* ---------- Carousel Banner ---------- */
+
+/* Hide mobile signup by default */
+.signBtn { display: none; }
+
+/* ---------- Carousel ---------- */
 .carousel-item img {
-    width: 100%;
-    height: 90vh;
-    object-fit: cover;
-    filter: brightness(40%);
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  filter: brightness(40%);
 }
 
 .carousel-caption {
-    bottom: 15%;
-    text-align: center;
+  bottom: 15%;
+  text-align: center;
 }
 
 .carousel-caption h5 {
-    color: #0ACEFE;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.25rem;
+  color: #0ACEFE;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 .carousel-caption h1 {
-    color: #fff;
-    font-weight: 700;
-    font-size: clamp(1.5rem, 5vw, 3rem);
-    line-height: 1.2;
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  line-height: 1.2;
 }
 
 .carousel-caption p {
-    font-size: clamp(1rem, 3vw, 1.25rem);
-    color: white;
-    margin: 15px 0;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  color: white;
+  margin: 15px 0;
 }
 
 .carousel-caption .btn {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.carousel-caption .btn1, .carousel-caption .btn2 {
-    padding: 0.8rem 1.5rem;
-    font-weight: 500;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+.carousel-caption .btn1,
+.carousel-caption .btn2 {
+  padding: 0.8rem 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .carousel-caption .btn1 {
-    background-color: #0ACEFE;
-    color: white;
+  background-color: #0ACEFE;
+  color: white;
+}
+.carousel-caption .btn1:hover {
+  background-color: transparent;
+  color: #0ACEFE;
+  border: 1px solid #0ACEFE;
 }
 
 .carousel-caption .btn2 {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
-
-.carousel-caption .btn1:hover {
-    color: #0ACEFE;
-    background-color: transparent;
-    border: 1px solid #0ACEFE;
-}
-
 .carousel-caption .btn2:hover {
-    color: white;
-    background-color: transparent;
-    border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
 }
 
-/* ---------- Form / Search ---------- */
-.searchBtn {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.searchBtn input {
-    width: 200px;
-}
-
-/* ---------- Buttons Visibility ---------- */
-.signBtn {
-    display: none;
-}
-
-.signLgBtn {
-    display: inline-block;
-}
-
-/* ---------- Responsive Styles ---------- */
+/* ---------- Responsive Breakpoints ---------- */
 
 /* Mobile: up to 576px */
 @media (max-width: 575.98px) {
+  .navbar .navbar-brand img { width: 60px; }
+  .navbar .logo { font-size: 1rem; }
+  .navbar .nav-link { font-size: 0.9rem; padding: 8px 5px; }
 
-    /* Navbar */
-    .navbar .navbar-brand img {
-        width: 60px; /* smaller logo */
-    }
+  .signBtn {
+    display: inline-block !important;
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+  }
+  .signLgBtn, .searchBtn { display: none !important; }
 
-    .navbar .logo {
-        font-size: 1rem;
-    }
-
-    .navbar .nav-link {
-        font-size: 0.9rem;
-        padding: 8px 5px;
-    }
-
-    /* Signup button adjustments */
-    .signBtn {
-        display: inline-block !important; /* show mobile signup */
-        margin-left: 10px;
-        padding: 5px 10px;
-        font-size: 0.85rem;
-    }
-
-    .signLgBtn, .searchBtn {
-        display: none !important; /* hide large buttons and search */
-    }
-
-    /* Carousel */
-    .carousel-item img {
-        height: 50vh; /* smaller height for small screens */
-    }
-
-    .carousel-caption {
-        bottom: 10%;
-        padding: 0 10px;
-    }
-
-    .carousel-caption h1 {
-        font-size: 1.6rem; /* smaller heading */
-        line-height: 1.3;
-    }
-
-    .carousel-caption h5 {
-        font-size: 1rem;
-    }
-
-    .carousel-caption p {
-        font-size: 0.9rem;
-        line-height: 1.2rem;
-    }
-
-    .carousel-caption .btn {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .carousel-caption .btn a {
-        padding: 10px 20px;
-        font-size: 0.85rem;
-    }
-
-    /* Optional: Navbar toggler spacing */
-    .navbar-toggler {
-        margin-left: auto;
-    }
+  .carousel-item img { height: 50vh; }
+  .carousel-caption { bottom: 10%; padding: 0 10px; }
+  .carousel-caption h1 { font-size: 1.6rem; line-height: 1.3; }
+  .carousel-caption h5 { font-size: 1rem; }
+  .carousel-caption p { font-size: 0.9rem; line-height: 1.2rem; }
+  .carousel-caption .btn { flex-direction: column; gap: 10px; }
+  .carousel-caption .btn a { padding: 10px 20px; font-size: 0.85rem; }
+  .navbar-toggler { margin-left: auto; }
 }
 
 /* Tablet: 577px - 991px */
 @media (min-width: 577px) and (max-width: 991px) {
-    .carousel-item img {
-        height: 70vh;
-    }
+  .carousel-item img { height: 70vh; }
+  .carousel-caption h1 { font-size: 2.5rem; }
+  .carousel-caption p { font-size: 1rem; }
 
-    .carousel-caption h1 {
-        font-size: 2.5rem;
-    }
-
-    .carousel-caption p {
-        font-size: 1rem;
-    }
-
-    .signBtn {
-        display: inline-block !important;
-        margin-left: 10px;
-    }
-
-    .signLgBtn {
-        display: none !important;
-    }
+  .signBtn { display: inline-block !important; margin-left: 10px; }
+  .signLgBtn { display: none !important; }
 }
 
-/* Large screens: 992px and above */
+/* Large screens: 992px+ */
 @media (min-width: 992px) {
-    .carousel-item img {
-        height: 90vh;
-    }
-
-    .signBtn {
-        display: none !important;
-    }
-
-    .signLgBtn {
-        display: inline-block !important;
-    }
-
-    .carousel-caption h1 {
-        font-size: clamp(2.5rem, 5vw, 4rem);
-    }
-
-    .carousel-caption p {
-        font-size: clamp(1rem, 2vw, 1.25rem);
-    }
-
-    .searchBtn input {
-        width: 250px;
-    }
+  .carousel-item img { height: 90vh; }
+  .signBtn { display: none !important; }
+  .signLgBtn { display: inline-block !important; }
+  .carousel-caption h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+  .carousel-caption p { font-size: clamp(1rem, 2vw, 1.25rem); }
+  .searchBtn input { width: 250px; }
 }
 
-/* Extra Large screens: ≥1400px */
+/* Extra Large: ≥1400px */
 @media (min-width: 1400px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 1400px;
-    }
+  .container, .container-lg, .container-md,
+  .container-sm, .container-xl, .container-xxl {
+    max-width: 1400px;
+  }
 }
 /*--------------- home page (banner section) ------------------------------------*/
 

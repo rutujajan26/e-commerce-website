@@ -16,31 +16,37 @@
 
   <!-- header section -->
 
-    <nav class="navbar navbar-expand-lg bg-light  bg-body-tertiary shadow-lg sticky-top">
+    <nav class="navbar navbar-expand-lg bg-light bg-body-tertiary shadow-lg sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-        <img src="image/logo.png" alt="logo" width="80px"><span class="logo">Learning and Placement</span>
-    </a>
-    <button class="btn signBtn d-flex justify-content-end"  data-bs-toggle="modal" data-bs-target="#enModal">Signup</button>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="image/logo.png" alt="logo" width="80">
+      <span class="logo ms-2">Learning and Placement</span>
+    </a>
+
+    <!-- Mobile Signup Button -->
+    <button class="btn signBtn ms-2" data-bs-toggle="modal" data-bs-target="#enModal">Signup</button>
+
+    <!-- Navbar Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarContent" aria-controls="navbarContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <!-- Left Side Links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="marketing.html">Marketing</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="programming.html">Programming</a>
-        </li>
-                 
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="marketing.html">Marketing</a></li>
+        <li class="nav-item"><a class="nav-link" href="programming.html">Programming</a></li>
+
+        <!-- Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="explore.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Explore
           </a>
           <ul class="dropdown-menu">
@@ -49,21 +55,22 @@
             <li><a class="dropdown-item" href="explore.html">Microsoft Excel</a></li>
             <li><a class="dropdown-item" href="explore.html">Machine Learning</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="explore.html">View all</a></li>
+            <li><a class="dropdown-item" href="#">View all</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="login.html">Login</a>
-        </li>
-        
+
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
       </ul>
+
+      <!-- Search Bar (Hidden on Mobile) -->
       <form class="searchBtn d-flex" role="search">
         <i class="fa-solid fa-magnifying-glass m-2"></i>
-        <input class="form-control me-2"  type="search" placeholder="Search Courses" aria-label="Search"/>        
-      </form>      
-    </div>
+        <input class="form-control me-2" type="search" placeholder="Search Courses" aria-label="Search">
+      </form>
 
-  <button class="signLgBtn" data-bs-toggle="modal" data-bs-target="#enModal">Signup</button>  
+      <!-- Large Screen Signup Button -->
+      <button class="signLgBtn ms-3" data-bs-toggle="modal" data-bs-target="#enModal">Signup</button>
+    </div>
   </div>
 </nav>
 
