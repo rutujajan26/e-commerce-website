@@ -151,9 +151,12 @@ html, body {
 
 /* Mobile: up to 576px */
 @media (max-width: 575.98px) {
-  .navbar .navbar-brand img { width: 60px; }
+  .navbar .navbar-brand img { width: 50px; }
   .navbar .logo { font-size: 1rem; }
   .navbar .nav-link { font-size: 0.9rem; padding: 8px 5px; }
+  .navbar span{
+     font-size: 8px;
+  }
 
   .signBtn {
     display: inline-block !important;
@@ -176,9 +179,9 @@ html, body {
 /* Tablet: 577px - 991px */
 @media (min-width: 577px) and (max-width: 991px) {
   .carousel-item img { height: 70vh; }
-  .carousel-caption h1 { font-size: 2.5rem; }
+  .carousel-caption h1 { font-size: 1.0rem; }
   .carousel-caption p { font-size: 1rem; }
-
+  .carousel-caption .btn{display: flex;}
   .signBtn { display: inline-block !important; margin-left: 10px; }
   .signLgBtn { display: none !important; }
 }
